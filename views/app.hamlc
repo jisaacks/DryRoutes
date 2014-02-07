@@ -1,0 +1,12 @@
+!!!
+%html(lang="en")
+  %head
+    %meta(charset="utf-8")
+    %title= "Push State"
+    %script{ type:"text/javascript", src:"/assets/application.js" }
+  %body
+
+    :javascript
+      $(function(){
+        new App(#{JSON.stringify(this)});
+      });

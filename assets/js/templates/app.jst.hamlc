@@ -1,0 +1,15 @@
+%button{"data-route" : ""} Root
+%button{"data-route" : "home"} Home
+%button{"data-route" : "what"} What
+%button{"data-route" : "article/17"} Article 17
+%button{"data-route" : "article/23"} Article 23
+%button{"data-route" : "article/42"} Article 42
+- # Below is a link that is not listed in our routes
+- # to demonstrate that we are not just listening for
+- # all routes on the the backend, but for the the
+- # same routes and our Backbone router.
+- # requesting this page from the server (click
+- # then refresh) will cause a 404 error.
+%button{"data-route" : "rand"} Some other page
+
+%p
